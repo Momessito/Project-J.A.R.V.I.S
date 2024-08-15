@@ -119,7 +119,7 @@ function detectSpeech() {
 
     recognition.onresult = function(event) {
         const transcript = event.results[event.results.length - 1][0].transcript.trim().toLowerCase();
-        console.log("Você disse: " + transcript);
+        Alert("Você disse: " + transcript);
 
         if (transcript === "iniciar") {
             console.log("Comando 'iniciar' detectado.");
